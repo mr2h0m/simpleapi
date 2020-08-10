@@ -19,7 +19,7 @@ def main(req: func.HttpRequest) -> func.HttpResponse:
     if str:
         regex = re.compile(r"((Oracle)|(Google)|(Microsoft)|(Amazon)|(Deloitte))", re.IGNORECASE)
         result_str = regex.sub(r"\1©", str)
-        # return func.HttpResponse(f"Hello {name}!")
+        # return 
         return func.HttpResponse(result_str)
     else:
         return func.HttpResponse(
